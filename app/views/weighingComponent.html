@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="panel-title" style="text-align: center"><h1 style="color: #DAA520">Golden Ball</h1></div>
+      <div class="col-sm-12 col-md-12 col-md-offset-1">
+        <span ng-repeat="ball in $ctrl.balls">
+          <button ng-click="$ctrl.selectHeaviestBall(ball)" ng-show="ball !== $ctrl.heaviestBall" class="btn btn-default orange-circle-button">{{ball.id}}</button>
+          <button ng-click="$ctrl.selectHeaviestBall(ball)" ng-show="ball === $ctrl.heaviestBall" class="btn btn-default orange-circle-button orange-circle-button-selected">{{ball.id}}</button>
+        </span>
+
+        <div style="margin-left: 25%; margin-top: 15px;">
+          <img src="../images/roberval.jpg" class="img-thumbnail">
+          <div style="margin-top: 15px;">
+            <button style="margin-left: 8%" class="btn btn-primary" ng-disabled="$ctrl.heaviestBall === undefined" ng-click="$ctrl.findHeaviestBall()">Exécuter</button>
+            <button style="margin-left: 4%" class="btn btn-default" ng-click="$ctrl.reset()">Réinitialiser</button>
+          </div>
+        </div>
+
+        <div ng-if="$ctrl.ballFindByAlgo !== undefined" style="width: 51%; margin-top: 10px; margin-left: 15%; text-align: center" class="alert alert-success">
+          C'est la boule {{$ctrl.ballFindByAlgo.id}} qui est la plus lourde ! Solution trouvée en {{$ctrl.iterationNumber}} itérations
+        </div>
+      </div>
+  </div>
+</div>
