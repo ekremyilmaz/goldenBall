@@ -1,0 +1,43 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+.orange-circle-button {
+  box-shadow: 2px 4px 0 2px rgba(0,0,0,0.1);
+  border: .5em solid #E84D0E;
+  font-size: 1em;
+  line-height: 1.1em;
+  color: #ffffff;
+  background-color: #e84d0e;
+  margin: auto;
+  border-radius: 50%;
+  height: 7em;
+  width: 7em;
+  position: relative;
+}
+.orange-circle-button:hover {
+  color:#ffffff;
+  background-color: #e84d0e;
+  text-decoration: none;
+  border-color: #ff7536;
+
+}
+.orange-circle-button-selected {
+  color:#ffffff;
+  background-color: #DAA520;
+  text-decoration: none;
+
+}
+.orange-circle-link-greater-than {
+  font-size: 1em;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 80%;
+  height: 50%;
+  //min-width: 200px;
+  //max-width: 400px;
+  padding: 40px;
+}
