@@ -45,11 +45,17 @@ Le principe de l'algorithme est le suivant :
  Les tests ont donné les résultats suivants :
 
  Pour 1 boule : 0 itérations, car rien à faire
+ 
  Pour 2 boules : 1 itération
+ 
  Pour 3 boules : 1 itération
+ 
  Pour 8 boules : 2 iterations
+ 
  Pour 10 boules : au mieux 2, au max 3
+ 
  Pour 20 boules : 3
+ 
  Pour 200 boules : 5
 
 
